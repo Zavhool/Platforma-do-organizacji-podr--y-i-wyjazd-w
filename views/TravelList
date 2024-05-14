@@ -1,0 +1,18 @@
+<!-- views/travelList.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel List</title>
+</head>
+<body>
+    <h1>Travel List</h1>
+    <ul>
+        <% travels.forEach(travel => { %>
+            <li><%= travel.destination %> - <%= travel.date %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>

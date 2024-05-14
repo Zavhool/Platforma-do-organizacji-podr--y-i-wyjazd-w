@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-image: url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .navbar li {
+      margin: 0 20px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 20px 0;
+      display: block;
+    }
+    .navbar a:hover {
+      color: #ddd;
+    }
+    .full-width-image {
+      width: 100%;
+      height: 80vh;
+      background-image: url('https://images.unsplash.com/photo-1574260031597-bcd9eb192b4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .section {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="header" id="home">
+    <h1>Welcome to Travel Planner</h1>
+  </div>
+
+  <div class="full-width-image">
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Plan your trips and adventures with ease using our platform.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"> 
+    <img src="https://images.unsplash.com/photo-1526048598645-62b31f82b8f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI3fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Image 2"> 
+    <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjUwfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Image 3"> 
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <p>Explore our wide range of travel planning services designed to make your trips unforgettable.</p>
+    <a href="#addhotel" class="button">Add Hotel</a>
+    <a href="#bookhotel" class="button">Book Hotel</a>
+    <a href="#createtrip" class="button">Create Trip</a>
+  </div>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzAwfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Service Image 1">
+    <img src="https://images.unsplash.com/photo-1523568129082-a8d6c095638e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjU1fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Service Image 2"> 
+    <img src="https://images.unsplash.com/photo-1511968822213-92de73315bba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjgwfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Service Image 3"> 
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need further information, feel free to contact us.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="Contact Image 1">
+    <img src="https://images.unsplash.com/photo-1500815845799-7748ca339f27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjkwfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Contact Image 2"> 
+    <img src="https://images.unsplash.com/photo-1523428461295-92770e70d7ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk1fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="Contact Image 3">
+  </div>
+
+  <div class="section" id="addhotel">
+    <h2>Add Plan</h2>
+    <p>Use this form to add a new hotel to our listings.</p>
+   
+  </div>
+
+  <div class="section" id="bookhotel">
+    <h2>Book Hotel</h2>
+    <p>Use this form to book a hotel for your trip.</p>
+    <!-- Add your form or additional content here -->
+  </div>
+
+  <div class="section" id="createtrip">
+    <h2>Create Trip</h2>
+    <p>Use this form to create a custom trip itinerary.</p>
+    <!-- Add your form or additional content here -->
+  </div>
+
+</body>
+</html>
+
