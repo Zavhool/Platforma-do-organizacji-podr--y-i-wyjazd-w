@@ -11,7 +11,7 @@ Tworzenie nowych wyjazdów.
 Dodawanie planów podróży.
 Rezerwowanie hoteli.
 
-Instrukcje Obsługi:
+
 Po sklonowaniu repozytorium, przejdź do katalogu projektu.
 Uruchomienie instalacji zależności za pomocą polecenia:
 Копіювати код
